@@ -21,8 +21,31 @@ type Circle struct {
 }
 
 
+
+
 func (circle Circle) Perimeter() float64 {
 	return math.Pi * circle.radius*2
 }
 
 
+func (rect Rectangle) Area() float64 {
+	return rect.width * rect.height
+}
+func (circle Circle) Area() float64{
+
+	return math.Pi * circle.radius * circle.radius
+}
+
+type Shape interface {
+	Area() float64
+}
+
+
+type Triangle struct {
+	Base    float64
+	Height  float64
+}
+
+func (tri Triangle) Area() float64 {
+	return tri.Base * tri.Height/2
+}
