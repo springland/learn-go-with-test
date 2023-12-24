@@ -18,5 +18,5 @@ func TestGreet(t *testing.T) {
 		t.Errorf("got %q want %q", got, want)
 	}
 
-	Greet(os.Stdout , "Elodie")
+
 }

@@ -1,6 +1,7 @@
 package concurrency
 
-//mport "time"
+//import "time"
+
 
 type WebsiteChecker func(string ) bool
 
